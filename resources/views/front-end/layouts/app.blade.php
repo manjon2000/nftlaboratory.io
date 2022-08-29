@@ -38,7 +38,7 @@
                     <ul class="list-menu_rrss">
                         <li class="rrss-items"><a class="twitter" href=""><i class="fab fa-twitter"></i></a></li>
                         <li class="rrss-items"><a class="instagram" href=""><i class="fab fa-instagram"></i></a></li>
-                        <li class="rrss-items"><a class="facebook" href=""><i class="fab fa-facebook"></i></a></li>
+                        <li class="rrss-items"><a class="facebook" href="https://www.instagram.com/nftlaboratory.io/"><i class="fab fa-facebook"></i></a></li>
                     </ul>
                 </ul>
             </div>
@@ -106,7 +106,7 @@
                         <a href=""><i class="fab fa-twitter"></i></a>
                     </div>
                     <div class="rrss_item">
-                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/nftlaboratory.io/"><i class="fab fa-instagram"></i></a>
                     </div>
                     <div class="rrss_item">
                         <a href=""><i class="fab fa-facebook"></i></a>
@@ -117,12 +117,10 @@
     </footer>
     <!-- End Footer -->
 
+
     <!-- Script end body -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <script src="{{ asset('js/app.js') }}"></script>
-    
+    <script src="{{ asset('js/app.js') }}?v=<?= time()?>"></script>
     @yield('swiper')
     <!-- End Script end body -->
 

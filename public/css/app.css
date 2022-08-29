@@ -14,12 +14,7 @@ body {
 .d-none {
   display: none;
 }
-.error
-{
-  color: rgb(235, 85, 85) !important;
-  font-size: .8rem;
-  margin-top: 10px;
-}
+
 .bg-dark {
   background-color: rgb(20, 20, 20);
 }
@@ -135,7 +130,7 @@ body {
   display: block;
   width: 40px;
   height: 40px;
-  outline: 1px solid #fff;
+   border: 1px solid #fff;
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -262,7 +257,7 @@ body {
   .navbar-content_rrss_desktop div {
     width: 35px;
     height: 35px;
-    outline: 2px solid rgba(255, 255, 255, 0.548);
+     border: 2px solid rgba(255, 255, 255, 0.548);
     margin-right: 20px;
     display: flex;
     align-items: center;
@@ -274,7 +269,7 @@ body {
     -o-border-radius: 30px;
   }
   .navbar-content_rrss_desktop div:hover {
-    outline: 2px solid #bc318f;
+     border: 2px solid #bc318f;
     transition: 1s ease-in-out;
     -webkit-transition: 1s ease-in-out;
     -moz-transition: 1s ease-in-out;
@@ -303,7 +298,7 @@ body {
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-    outline: 2px solid #fff;
+     border: 2px solid #fff;
     transition: 1s ease;
     -webkit-transition: 1s ease;
     -moz-transition: 1s ease;
@@ -312,7 +307,7 @@ body {
   }
   .navbar-content-btn_contact:hover {
     background-color: #d9317a;
-    outline: 2px solid rgba(217, 49, 122, 0.5764705882);
+     border: 2px solid rgba(217, 49, 122, 0.5764705882);
     transition: 1s ease;
     -webkit-transition: 1s ease;
     -moz-transition: 1s ease;
@@ -338,6 +333,13 @@ body {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  background-color: rgba(0, 0, 0, 0.651);
+  /* background-image: url(../images/bg-header-1.webp); */
+  background-blend-mode: overlay;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-bottom: 100px;
   position: relative;
 }
@@ -386,7 +388,7 @@ body {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-  outline: 2px solid #fff;
+   border: 2px solid #fff;
 }
 .header_button a {
   color: #fff;
@@ -400,7 +402,7 @@ body {
   position: absolute;
   bottom: -1px;
   background-image: radial-gradient(circle farthest-corner at 20% 10%, rgb(90, 92, 106) 100%, #222831 0%);
-  outline: none;
+   border: none;
   border: none;
 }
 
@@ -521,11 +523,9 @@ body {
 
 .service-item {
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  min-height: 300px;
   padding: 30px 15px;
-  outline: 2px solid rgba(255, 255, 255, 0.26);
+   border: 2px solid rgba(255, 255, 255, 0.26);
   margin-bottom: 50px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -713,7 +713,7 @@ body {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  margin: 150px auto 100px auto;
+  margin: 100px auto;
 }
 
 .form-group {
@@ -734,7 +734,7 @@ body {
 }
 .form-group_item input {
   border: none;
-  outline: 1px solid #F500B1;
+   border: 1px solid #F500B1;
   background-color: transparent;
   border-radius: 5px;
   padding: 5px;
@@ -759,7 +759,7 @@ body {
 .form-textarea textarea {
   background-color: transparent;
   border: none;
-  border: 1px solid #F500B1;
+   border: 1px solid #F500B1;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -772,28 +772,12 @@ body {
 .form-button {
   width: 60%;
   height: 35px;
-  border: 2px solid #27F5DE;
+   border: 2px solid #27F5DE;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  transition: .6s ease-in;
-  -webkit-transition: .6s ease-in;
-  -moz-transition: .6s ease-in;
-  -ms-transition: .6s ease-in;
-  -o-transition: .6s ease-in;
-  
-}
-.form-button:hover
-{
-  background-color: #F500B1;
-  border: 2px solid #fff;
-  transition: .6s ease-in;
-  -webkit-transition: .6s ease-in;
-  -moz-transition: .6s ease-in;
-  -ms-transition: .6s ease-in;
-  -o-transition: .6s ease-in;
 }
 .form-button button {
   width: 100%;
@@ -801,8 +785,6 @@ body {
   border: none;
   background-color: transparent;
   color: #fff;
-  cursor: pointer;
-  font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {
@@ -870,7 +852,7 @@ body {
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
-  outline: 2px solid #cecece;
+   border: 2px solid #cecece;
 }
 .footer-content-rrss div:last-child {
   margin-right: 0px;
