@@ -1,6 +1,6 @@
 @extends('front-end.layouts.app')
 
-{{-- @section('style-custom')
+@section('style-custom')
     <style>
         .header-container
         {
@@ -13,7 +13,7 @@
             background-repeat: no-repeat;
         }
     </style>
-@endsection --}}
+@endsection
 
 @section('swiper-head')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -36,7 +36,7 @@
                 </p>
             </div>
             <div class="header_button">
-                <a href="./contacto.html">Contactanos</a>
+                <a href="{{ route('contact') }}">Contactanos</a>
             </div>
         </article>
         <article class="header-slider_service_3d">
@@ -95,12 +95,12 @@
 @endsection
 
 @section('main-content')
-    <section class="work-with-us load-hidden">
-        <article class="work-with-us_content load-hidden">
-            <div class="work-with-us_title load-hidden">
+    <section class="work-with-us  ">
+        <article class="work-with-us_content  ">
+            <div class="work-with-us_title  ">
                 <h3>Trabaja con Nosotros</h3>
             </div>
-            <div class="work-with-us_description load-hidden">
+            <div class="work-with-us_description  ">
                 <p>
                     ¿Por qué deberías confiar en NFT laboratory? Pondremos a tu disposición un equipo de
                     profesionales expertos en el sector NFT que te ayudará y trabajará en tu proyecto aportando todo
@@ -111,14 +111,14 @@
                 </p>
             </div>
         </article>
-        <article class="work-with-us-image load-hidden">
+        <article class="work-with-us-image  ">
             <img src="{{ asset('images/home/27.png') }}" alt="">
         </article>
     </section>
     <section class="services-container">
         <article class="section-content">
             <!-- Service items -->
-            <div class="service-item load-hidden">
+            <div class="service-item  ">
                 <div class="service-image">
                     <img src="{{ asset('images/servicios/Smart contract.png') }}" alt="">
                 </div>
@@ -134,7 +134,7 @@
             </div>
 
             <!-- Service items -->
-            <div class="service-item load-hidden">
+            <div class="service-item  ">
                 <div class="service-image">
                     <img src="{{ asset('images/servicios/Programacion Blockchain.png') }}" alt="">
                 </div>
@@ -149,7 +149,7 @@
             </div>
 
             <!-- Service items -->
-            <div class="service-item load-hidden">
+            <div class="service-item  ">
                 <div class="service-image">
                     <img src="{{ asset('images/servicios/Comunidad.png') }}" alt="">
                 </div>
@@ -166,7 +166,7 @@
             </div>
 
             <!-- Service items -->
-            <div class="service-item load-hidden">
+            <div class="service-item  ">
                 <div class="service-image">
                     <img src="{{ asset('images/servicios/Marketing.png') }}" alt="">
                 </div>
@@ -183,7 +183,7 @@
 
 
             <!-- Service items -->
-            <div class="service-item load-hidden">
+            <div class="service-item  ">
                 <div class="service-image">
                     <img src="{{ asset('images/servicios/Lanzamiento.png') }}" alt="">
                 </div>
@@ -199,7 +199,7 @@
             </div>
 
             <!-- Service items -->
-            <div class="service-item load-hidden">
+            <div class="service-item  ">
                 <div class="service-image">
                     <img src="{{ asset('images/servicios/Creación.png') }}" alt="">
                 </div>
@@ -216,21 +216,21 @@
             </div>
         </article>
         <article class="btn-view-all-services">
-            <div class="button-action load-hidden">
-                <a href="./services.html">Ver todos los servicios </a>
+            <div class="button-action  ">
+                <a href="{{ route('services') }}">Ver todos los servicios </a>
             </div>
         </article>
     </section>
     <section class="contact-the-team">
         <article class="contact-the-team-content">
-            <div class="contact-the-team-title load-hidden">
+            <div class="contact-the-team-title  ">
                 <h2>Contacta ahora con el equipo de NFT laboratory y evaluaremos cómo podemos ayudarte</h2>
             </div>
-            <div class="button-action-2 load-hidden">
-                <a href="./contacto.html">Contactar</a>
+            <div class="button-action-2  ">
+                <a href="{{ route('contact') }}">Contactar</a>
             </div>
         </article>
-        <article class="contact-the-team-image load-hidden">
+        <article class="contact-the-team-image  ">
             <img src="{{ asset('images/home/28.png') }}" alt="">
         </article>
     </section>

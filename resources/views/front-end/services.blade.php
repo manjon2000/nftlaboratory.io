@@ -67,7 +67,6 @@
             </div>
         </div>
 
-
         <!-- Service items -->
         <div class="service-item">
             <div class="service-image">
@@ -149,7 +148,7 @@
         </div>
 
         <!-- Service items -->
-        <div class="service-item">
+        {{-- <div class="service-item">
             <div class="service-image">
                 <img src="{{ asset('images/servicios/Tokenomics.png') }}" alt="">
             </div>
@@ -162,7 +161,7 @@
 
                 </p>
             </div>
-        </div>
+        </div> --}}
 
         <!-- Service items -->
         <div class="service-item">
@@ -243,7 +242,6 @@
                 </p>
             </div>
         </div>
-
 
         <!-- Service items -->
         <div class="service-item">
