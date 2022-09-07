@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crea tu colección NFT, aprende todo sobre el mundo NFT</title>
+    <title>Crea tu colección NFT, aprende todo sobre el mundo NFT.</title>
+
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}?v=<?= time()?>">
     <!-- End Styles -->
+
     <!-- Script -->
-    <script src="https://kit.fontawesome.com/762a7ec47b.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/aba09469eb.js" crossorigin="anonymous"></script>
     <!-- End Script -->
     @yield('swiper-head')
     @yield('style-custom')
@@ -36,9 +38,10 @@
                     <!-- <li class="link-items"><a href="">Blog</a></li> -->
                     <li class="link-items"><a href="{{ route('contact') }}">Contacto</a></li>
                     <ul class="list-menu_rrss">
-                        <li class="rrss-items"><a class="twitter" href=""><i class="fab fa-twitter"></i></a></li>
-                        <li class="rrss-items"><a class="instagram" href=""><i class="fab fa-instagram"></i></a></li>
-                        <li class="rrss-items"><a class="facebook" href="https://www.instagram.com/nftlaboratory.io/"><i class="fab fa-facebook"></i></a></li>
+                        <li class="rrss-items"><a class="twitter" href="https://twitter.com/home"><i class="fab fa-twitter"></i></a></li>
+                        <li class="rrss-items"><a class="instagram" href="https://www.instagram.com/nftlaboratory.io/"><i class="fab fa-instagram"></i></a></li>
+                        <li class="rrss-items"><a class="facebook"href=""><i class="fa-brands fa-tiktok"></i></a></li>
+                        <li class="rrss-items"><a class="facebook" href=""><i class="fab fa-facebook"></i></a></li>
                     </ul>
                 </ul>
             </div>
@@ -103,10 +106,13 @@
             <article class="footer-rrss">
                 <div class="footer-content-rrss">
                     <div class="rrss_item">
-                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
                     </div>
                     <div class="rrss_item">
                         <a href="https://www.instagram.com/nftlaboratory.io/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="rrss_item">
+                        <a href="https://www.tiktok.com/@nftlaboratory.io"><i class="fa-brands fa-tiktok"></i></a>
                     </div>
                     <div class="rrss_item">
                         <a href=""><i class="fab fa-facebook"></i></a>
