@@ -19,4 +19,7 @@ class viewController extends Controller
     {
         return view('front-end.contact');
     }
+    public function privacidad(){
+        return view('front-end.politicas.privacidad');
+    }
 }

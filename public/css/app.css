@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);* {
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,6 +8,8 @@
 }
 
 body {
+  width: 100%;
+  height: max-content;
   font-family: "Lato", sans-serif;
   background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(90, 92, 106) 0%, #222831 81.3%);
 }
@@ -89,8 +92,6 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
-}
-.navbar-mobile_close i {
   color: #fff;
 }
 
@@ -122,6 +123,7 @@ body {
 }
 .list-menu_rrss li {
   margin-right: 20px;
+
 }
 .list-menu_rrss li:last-child {
   margin-right: 0px;
@@ -141,6 +143,11 @@ body {
   -moz-transition: 1s ease-in-out;
   -ms-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  opacity: 0.8;
 }
 .list-menu_rrss li a:hover {
   transition: 1s ease-in-out;
@@ -153,11 +160,6 @@ body {
 .list-menu_rrss li a i {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  opacity: 0.8;
 }
 
 .twitter:hover {
@@ -173,7 +175,7 @@ body {
   background-color: #3b5998 !important;
 }
 
-.navbar-mobile_open-menu i {
+.navbar-mobile_open-menu {
   color: #fff;
   font-size: 1.1rem;
 }
@@ -489,6 +491,10 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.button-calendary
+{
+    margin-top: 100px;
+}
 
 @media screen and (min-width: 768px) {
   .work-with-us {
@@ -506,6 +512,39 @@ body {
     width: 300px;
   }
 }
+
+.button-action-3 {
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F500B1;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.336);
+}
+  .button-action-3 a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .button-action-3{
+        width: 350px;
+    }
+}
+
 .services-container {
   width: 100%;
   min-height: 400px;
@@ -534,7 +573,11 @@ body {
   -o-border-radius: 5px;
   color: #fff;
 }
-
+@media screen and (min-width: 768px){
+    .service-item{
+        padding: 30px 25px;
+    }
+}
 .service-image {
   width: 100px;
   height: 100px;
@@ -554,8 +597,15 @@ body {
 .service-desc {
   margin-bottom: 30px;
 }
-
-.service-button {
+@media screen and (min-width: 768px){
+    .service-desc p{
+        font-size: .9rem;
+        font-weight: 300;
+        line-height: 23px;
+        text-align: justify;
+    }
+}
+/* .service-button {
   width: 70%;
   height: 40px;
   background-color: #F500B1;
@@ -570,7 +620,7 @@ body {
 }
 .service-button a {
   color: #fff;
-}
+} */
 
 .btn-view-all-services {
   width: 100%;
@@ -798,11 +848,29 @@ body {
     width: 30%;
   }
 }
+@media screen and (min-width: 950px){
+    .contact-container{
+        width: 70%;
+        margin: 200px auto 100px  auto;
+    }
+}
 @media screen and (min-width: 1024px) {
   .form-button {
-    width: 20%;
+    width: 35%;
+  }
+  .contact-container{
+
   }
 }
+
+@media screen and (min-width: 1536px){
+    .contact-container{
+        width: 60%;
+        margin-bottom: 180px;
+    }
+}
+
+
 .footer-container {
   width: 100%;
   height: -webkit-max-content;
@@ -863,11 +931,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.footer-content-rrss div a i {
   color: #fff;
   opacity: 0.8;
 }
+
 
 @media screen and (min-width: 1024px) {
   .footer-politic {
@@ -895,7 +962,8 @@ body {
   background-size: cover;
   width: 100%;
   padding: 20px 20px;
-  background-color: rgba(0, 0, 0, 0.507);
+  background-color: rgba(0, 0, 0, 0.322);
+  border: 2px solid rgba(78, 78, 78, 0.158);
   overflow: hidden;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -954,4 +1022,38 @@ body {
   .swiper-slide {
     width: 50% !important;
   }
+}
+
+/* Politic */
+
+.main_container
+{
+    width: 100%;
+    height: max-content;
+}
+.politic-privaciti
+{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.content-politic
+{
+    color: #fff;
+}
+.content-politic h3{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #e33f5f;
+    font-weight: 900;
+
+}
+.content-politic p{
+    margin-bottom: 30px;
+}
+
+.content-politic p > a{
+    color: #e33f5f;
+    font-weight: 900;
 }

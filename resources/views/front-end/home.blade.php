@@ -95,7 +95,7 @@
 @endsection
 
 @section('main-content')
-    <section class="work-with-us  ">
+    <section class="work-with-us">
         <article class="work-with-us_content  ">
             <div class="work-with-us_title  ">
                 <h3>Trabaja con Nosotros</h3>
@@ -114,6 +114,15 @@
         <article class="work-with-us-image  ">
             <img src="{{ asset('images/home/27.png') }}" alt="">
         </article>
+    </section>
+    <section class="button-calendary">
+            <article class="button-section">
+                <div class="button-action-3">
+                    <a target="_blank" href="https://calendly.com/nftlaboratory/30min">
+                        AGENDA UNA REUNIÓN CON NOSOTROS
+                    </a>
+                </div>
+            </article>
     </section>
     <section class="services-container">
         <article class="section-content">

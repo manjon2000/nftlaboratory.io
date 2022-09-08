@@ -17,3 +17,5 @@ Route::get('/', [App\Http\Controllers\viewController::class, 'home']) ->name('ho
 Route::get('/servicios', [App\Http\Controllers\viewController::class, 'services']) ->name('services');
 Route::get('/contacto', [App\Http\Controllers\viewController::class, 'contact']) ->name('contact');
 Route::post('/contacto', [App\Http\Controllers\sendMailController::class, 'send'])->name('sendMail');
+Route::get('/politicas-privacidad', [App\Http\Controllers\viewController::class, 'privacidad'])
+->name('privacidad');

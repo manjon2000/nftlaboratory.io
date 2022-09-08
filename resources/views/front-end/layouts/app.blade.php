@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crea tu colección NFT, aprende todo sobre el mundo NFT.</title>
 
+    {{-- Icono --}}
+        <link rel="icon" type="image/x-icon" href="{{ asset('images/NFT-LABORATORY.png') }}" >
+    {{-- End icono --}}
+
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}?v=<?= time()?>">
     <!-- End Styles -->
@@ -38,10 +42,27 @@
                     <!-- <li class="link-items"><a href="">Blog</a></li> -->
                     <li class="link-items"><a href="{{ route('contact') }}">Contacto</a></li>
                     <ul class="list-menu_rrss">
-                        <li class="rrss-items"><a class="twitter" href="https://twitter.com/home"><i class="fab fa-twitter"></i></a></li>
-                        <li class="rrss-items"><a class="instagram" href="https://www.instagram.com/nftlaboratory.io/"><i class="fab fa-instagram"></i></a></li>
-                        <li class="rrss-items"><a class="facebook"href=""><i class="fa-brands fa-tiktok"></i></a></li>
-                        <li class="rrss-items"><a class="facebook" href=""><i class="fab fa-facebook"></i></a></li>
+                        <li class="rrss-items">
+                            <a class="twitter" href="https://twitter.com/home">
+
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="rrss-items">
+                            <a target="_blank"class="instagram" href="https://www.instagram.com/nftlaboratory.io/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="rrss-items">
+                            <a target="_blank" class="facebook"href="https://www.tiktok.com/@nftlaboratory.io">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </li>
+                        <li target="_blank" class="rrss-items">
+                            <a target="_blank" class="facebook" href="https://www.facebook.com/NFTLaboratory.io">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
                     </ul>
                 </ul>
             </div>
@@ -62,17 +83,20 @@
             <div class="navbar-content-info_desktop">
                 <div class="navbar-content_rrss_desktop">
                     <div class="rrss_item">
-                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a target="_blank" href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
                     </div>
                     <div class="rrss_item">
-                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/nftlaboratory.io/"><i class="fab fa-instagram"></i></a>
                     </div>
                     <div class="rrss_item">
-                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.tiktok.com/@nftlaboratory.io"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                    <div class="rrss_item">
+                        <a href="https://www.facebook.com/NFTLaboratory.io"><i class="fab fa-facebook"></i></a>
                     </div>
                 </div>
                 <div class="navbar-content-btn_contact">
-                    <a href="./contacto.html">Contactanos</a>
+                    <a href="{{ route('contact') }}">Contactanos</a>
                 </div>
             </div>
         </div>
@@ -97,7 +121,7 @@
             </article>
             <article class="footer-politic">
                 <div class="footer-politic-link">
-                    <a href="#">Política de Privacidad</a>
+                    <a href="{{ route('privacidad') }}">Política de Privacidad</a>
                 </div>
                 <div class="footer-copyright">
                     <p>Copyright © 2022. Todos los derechos reservados.</p>
@@ -115,7 +139,7 @@
                         <a href="https://www.tiktok.com/@nftlaboratory.io"><i class="fa-brands fa-tiktok"></i></a>
                     </div>
                     <div class="rrss_item">
-                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/NFTLaboratory.io"><i class="fab fa-facebook"></i></a>
                     </div>
                 </div>
             </article>
